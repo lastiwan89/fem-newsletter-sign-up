@@ -10,12 +10,12 @@ Thanks for checking out this front-end coding challenge.
 
 ### Screenshot
 
-![]()
+![](./assets/images/newsletter.png)
 
 ### Links
 
 - Solution URL: [Github Code](https://github.com/lastiwan89/fem-newsletter-sign-up)
-- Live Site URL: [Netlify]()
+- Live Site URL: [Netlify](https://64d60ba27734c24c3f60c563--comforting-paprenjak-aabcf4.netlify.app/)
 
 ## My process
 
