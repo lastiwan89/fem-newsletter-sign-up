@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: swap;
+  font-weight: 100 900;
+  src: url("../assets/fonts/Roboto-Bold.ttf") format(truetype) url("../assets/fonts/Roboto-Regular.ttf") format(truetype);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: hsl(234, 29%, 20%);
+  display: grid;
+  place-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+body .main.active {
+  visibility: hidden;
+}
+body .main {
+  display: grid;
+  grid-template-columns: 460px 460px;
+  justify-items: end;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 2.25rem;
+  overflow: hidden;
+  padding: 1rem;
+  margin: 0 auto;
+  visibility: visible;
+}
+@media (max-width: 600px) {
+  body .main {
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+    max-width: 375px;
+    min-height: 812px;
+  }
+}
+body .main .section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-left: 3.5rem;
+}
+@media (max-width: 600px) {
+  body .main .section {
+    padding: 2rem 1rem;
+  }
+}
+body .main .section__title {
+  font-size: 3.5rem;
+}
+@media (max-width: 600px) {
+  body .main .section__title {
+    font-size: 2.5rem;
+  }
+}
+body .main .section__text {
+  font-size: 1rem;
+}
+body .main .section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.62rem;
+}
+body .main .section__list--item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+@media (max-width: 600px) {
+  body .main .section__list--item {
+    align-items: start;
+  }
+}
+body .main .section__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+body .main .section__form label {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+body .main .section__form input {
+  padding: 1rem;
+  text-indent: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(235, 18%, 26%);
+  border-radius: 8px;
+  border: none;
+  outline: 1.8px solid hsl(231, 7%, 60%);
+}
+body .main .section__form--button {
+  cursor: pointer;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+body .main .section__form--button:hover {
+  background-color: hsl(4, 100%, 67%);
+}
+@media (max-width: 600px) {
+  body .main picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 375px;
+    order: -1;
+    margin-top: -1.1rem;
+  }
+}
+body .popup.active {
+  visibility: visible;
+}
+body .popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+  max-width: 504px;
+  height: 520px;
+  border-radius: 36px;
+  padding: 4rem;
+  justify-content: space-around;
+  font-family: "Roboto", sans-serif;
+  visibility: hidden;
+}
+@media (max-width: 600px) {
+  body .popup {
+    min-width: 375px;
+    min-height: 812px;
+    justify-content: flex-start;
+    gap: 2rem;
+    border-radius: 0;
+    padding: 10rem 1.5rem 3rem 1.5rem;
+  }
+}
+body .popup__image {
+  width: 64px;
+  height: 64px;
+}
+body .popup__title {
+  font-size: 3.5rem;
+  line-height: 100%;
+  font-weight: 700;
+}
+@media (max-width: 600px) {
+  body .popup__title {
+    font-size: 2.5rem;
+  }
+}
+body .popup__text {
+  font-size: 1rem;
+  line-height: 150%;
+}
+body .popup__text .email {
+  font-weight: 700;
+}
+body .popup__button {
+  cursor: pointer;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+@media (max-width: 600px) {
+  body .popup__button {
+    margin-top: auto;
+  }
+}
+body .popup__button:hover {
+  background-color: hsl(4, 100%, 67%);
+}
